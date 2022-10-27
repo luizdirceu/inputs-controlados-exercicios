@@ -9,6 +9,15 @@ const [age, setAge] = useState("")
 const [email, setEmail] = useState("")
 const [formFlow, setFormFlow] = useState(1) //você não precisa mexer neste estado, ele faz parte da lógica da linha 30 do JSX
 
+const confirma = ()=>{
+  if(idade < 18){ onChangeName
+}if(name.length > 9 && name.length < 31){
+  onChangeAge
+}if(email = "usuario@usuario.com"){
+  onChangeEmail
+}if(email === formFlow){sendData}
+
+
 const onChangeName = (event) => {
   setName(event.target.value)
 }
@@ -30,9 +39,12 @@ const sendData = () => {
       <h2>Formulário de inscrição</h2>
       {formFlow === 1 ? <NameForm
       // insira aqui suas props
+      name = {name}
+      age = {age}
+      email = {email}
       /> : <ConfirmationForm />}
     </MainContainer>
   )
 }
-
+}
 export default MainPage
